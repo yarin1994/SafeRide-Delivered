@@ -59,13 +59,5 @@ class Scooter(models.Model):
     def __str__(self):
         return self.serial_number
 
-# class CreateUser(models.Model):
-#     user_name       = models.ForeignKey(User, on_delete=models)
-    
-
-# class Usertype(models.Model):
-#     vendor=models.BooleanField(default=False)
-#     rider=models.BooleanField(default=False)
-
 
 
