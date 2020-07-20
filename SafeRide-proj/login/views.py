@@ -49,13 +49,6 @@ def index(request):
 
 
 
-
-
-    # scooters = Scooter.objects.all()
-    # return render(request, 'login/index.html', {'allscooters':scooters})
-    # return render(request, 'login/index.html')
-
-
 def logoutuser(request):
     if request.method == 'POST':
         logout(request)
@@ -105,19 +98,6 @@ def my_scooters(request):
 
 
 
-# def updatescooter(request, scooter_pk):
-#     scooters = get_object_or_404(Scooter, pk= scooter_pk, user_id = request.user)
-
-#     if request.method == 'POST':
-#         form - ScooterForm(instance=scooters)
-#         return render(request, 'login/updatescooter.html', {'scooters':scooters, 'form':form})
-#     else:
-#         try:
-#             form = ScooterForm(request.POST, instance=scooters)
-#             form.save()
-#             return redirect('vendor_list.html')
-#         except ValueError:
-#             return render(request, 'login/updatescooter.html', {'form':ScooterForm(), 'errMsg':'Data mismatch'})
 
 def updateScooter(request, pk):
     scooter = Scooter.objects.get(id = pk)
@@ -139,13 +119,3 @@ def deleteScooter(request, pk):
     scooter.delete()
     return redirect('myScooters')
    
-
-    
-# def logos(request):
-#     scooter_logos = [
-#         {'brand':'bird','url':'../images/bird.png'},
-#         {'brand':'lime','url':'../images/lime.png'},
-#         {'brand':'wind','url':'../images/wind.png'}
-#     ]
-
-#     return JsonResponse({'scooter_logos':scooter_logos})
