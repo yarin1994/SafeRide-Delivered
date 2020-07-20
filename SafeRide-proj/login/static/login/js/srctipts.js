@@ -37,18 +37,7 @@ window.onload = function() {
 }
 
 
-// var filt = $(".filter").children()
-// console.log(filt)
-// window.onload = function() {
-//   console.log("hello")
-//   // for(vari = 0 ; car < filt.length; i++){
 
-//   // }
-
-// }
-
-
-//console.log(".filter")
 
 
 $(".dropbtn").on("click",function(){
@@ -61,7 +50,6 @@ $(".dropbtn").on("click",function(){
   }); 
 
 
-// $(".bodycard")[0].children[1].children[1].innerHTML
 
 
 $("#all_button").on("click",function(){
