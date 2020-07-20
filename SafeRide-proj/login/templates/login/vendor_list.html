@@ -24,7 +24,7 @@
             </div>
 
             <ul class="menu">
-                <!--mobile nav bar-->
+              
             {% if user.is_authenticated %}
                 <li><a href="{% url 'index' %}">Home</a></li>
                 <li><a href="#">Scooter Pool</a></li>
@@ -98,24 +98,7 @@
             </div>
 
           
-            <!-- <div class="row" id="cards_container">
-                {% for t in allscooters %}
-                <ul class="bodycard">
-                    <ol>
-                        
-                        <li><b>serial number: </b> {{ t.serial_number }}</li>
-                        <li><b>brand: </b>{{ t.brand }}</li>
-                        <li><b>city: </b>{{ t.city }}</li>
-                        <li><b>helmet: </b>{{ t.helmet }}</li>
-                        <li><b>status: </b>{{ t.status }}</li>
-                        <li><b>battery:</b>{{ t.battery }}</li>
-
-                        
-                    </ol>
-                </ul>
-                {% endfor %}
-            </div> -->
-            
+                       
     
 
 
@@ -167,8 +150,6 @@
         var img_folder_path = "{{image_folder_path | safe}}"
     </script>
     <script src="{% static '/login/js/srctipts.js' %}"></script>
-
-    <!-- <script src="includes/js/srctipts.js"></script> -->
 </body>
 
 
