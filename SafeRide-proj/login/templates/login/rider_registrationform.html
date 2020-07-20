@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'login/css/style.css' %}">
+    <title>Register Form</title>
+</head>
+<body>
+    <h1>Welcome to SafeRide</h1>
+    <h3>{{errMsg}}</h3>
+    <form action="#" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Register</button>
+
+    </form>
+</body>
+</html>
